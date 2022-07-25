@@ -62,7 +62,7 @@ class clamav::freshclam {
       hasrestart => true,
       hasstatus  => true,
       subscribe  => $service_subscribe,
-      require    => Exec['/usr/bin/freshclam'],
+      require    => Exec['freshclam'],
     }
   }
 
